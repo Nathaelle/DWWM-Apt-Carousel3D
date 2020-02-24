@@ -1,0 +1,10 @@
+body {
+    background-color: azure;
+}
+
+.item {
+    width: 20%;
+    height: 250px;
+    border: 2px solid aqua;
+    margin: auto;
+}
