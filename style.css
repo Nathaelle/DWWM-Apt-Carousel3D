@@ -1,19 +1,10 @@
 body {
-<<<<<<< HEAD
     background-color: azure;
-=======
-    background-color: darkslategrey;
->>>>>>> master
 }
 
 .item {
     width: 20%;
     height: 250px;
-<<<<<<< HEAD
     border: 2px solid aqua;
-=======
-    border: 2px solid black;
-    color: white;
->>>>>>> master
     margin: auto;
 }
