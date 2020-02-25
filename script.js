@@ -1,18 +1,21 @@
-var carousel = document.querySelector(".carousel"), currdeg = 0;
+var carousel = document.querySelector('.carousel');
+var position = 0;
 
-document.querySelector(".next").addEventListener("click", (e) => {
-    rotate({ d: "n" });
-});
-document.querySelector(".prev").addEventListener("click", (e) => {
-    rotate({ d: "p" });
+var prev = document.querySelector('.prev');
+var next = document.querySelector('.next');
+
+prev.addEventListener("click", function () {
+    rotate(60);
 });
 
-function rotate(dir) {
-  if (dir.d == "n") {
-    currdeg = currdeg - 60;
-  }
-  if (dir.d == "p") {
-    currdeg = currdeg + 60;
-  }
-  carousel.style.transform = "rotateY(" + currdeg + "deg)";
+next.addEventListener("click", function () {
+    rotate(-60);
+});
+
+function rotate(direction) {
+    position += direction;
+    carousel.style.transform = "rotateY(" + position + "deg)"
 }
+
+console.log(prev);
+console.log(next);
